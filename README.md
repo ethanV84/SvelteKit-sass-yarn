@@ -1,19 +1,38 @@
-# SvleteKit-sass-yarn
+# create-svelte
 
-a skeleton sveltKit project with sass &amp; yarn
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-# Start project
+## Creating a project
 
-## Get all dependencies
+If you're seeing this, you've probably already done this step. Congrats!
 
-You can installe all dependencies with the following command :
+```bash
+# create a new project in the current directory
+npm init svelte
 
-```yarn```
+# create a new project in my-app
+npm init svelte my-app
+```
 
-## Start/build the project
+## Developing
 
-Once you've installed all the dependencies you can start a development server: `yarn dev`
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-Running `yarn package` will take the contents of src/lib and generate a package directory (which can be configured) containing the following:
+```bash
+npm run dev
 
-`yarn build` will generate a self-contained Node app inside the build directory. 
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
